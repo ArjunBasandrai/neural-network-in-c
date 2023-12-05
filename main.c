@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include "numc.h"
 #include "src/activations/activations.h"
+#include "src/nn/architecture.h"
+#include "src/nn/nn.h"
 
 int main() {
-    Matrix *m = create_matrix(2, 2);
-    fill_matrix(m, 1);
-    print_matrix(softmax(m));
-    free_matrix(m);
+    nn* n = create_nn(5, 5, 6, 7, 8, 10);
+    free_nn(n);
     return 0;
 }
