@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 
@@ -17,4 +18,8 @@ double relu(double x) {
 
 double leaky_relu(double x) {
     return max(0.01 * x, x);
+}
+
+double nn_tanh(double x) {
+    return (2 / (1 + exp(-2 * x))) - 1;
 }

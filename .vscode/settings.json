@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "numc.h": "c"
+        "numc.h": "c",
+        "activations.h": "c",
+        "cmath": "c"
     }
 }
