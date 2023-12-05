@@ -52,6 +52,9 @@ void initialize_weights(Matrix* matrix, int activation, int n, ...);
 // Find the argument of the maximum value in a matrix
 int argmax(Matrix *m);
 
+// Apply a function to each element of a matrix
+void apply(Matrix *m, double (*func)(double));
+
 // Element-wise cosine of a matrix
 void mcos(Matrix *m, int in_deg);
 // Element-wise sine of a matrix
